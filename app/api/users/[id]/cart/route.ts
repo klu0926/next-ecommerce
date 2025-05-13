@@ -1,6 +1,6 @@
 import { NextRequest } from "next/server";
 import { products } from "@/app/product-data";
-import { use } from "react";
+
 
 type ShoppingCart = Record<string, string[]>
 
