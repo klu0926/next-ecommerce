@@ -1,4 +1,8 @@
+![Alt text](public/screenshot1.png)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Vercel Site
+[https://nextjs-ecommerce-seven.vercel.app](https://nextjs-ecommerce-seven.vercel.app)
 
 ## Getting Started
 
@@ -13,6 +17,8 @@ pnpm dev
 # or
 bun dev
 ```
+
+## DEMO
 
 Open [https://nextjs-ecommerce-seven.vercel.app](https://nextjs-ecommerce-seven.vercel.app) with your browser to see the result.
 
