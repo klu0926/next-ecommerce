@@ -1,5 +1,7 @@
-import ProductList from "../ProductList";
 
+export const dynamic = 'force-dynamic' // force next.js to render on every single request, no static optimization or cache 
+
+import ProductList from "../ProductList";
 
 export default async function ProductPage(){
 

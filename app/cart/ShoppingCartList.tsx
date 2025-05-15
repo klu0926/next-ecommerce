@@ -8,6 +8,8 @@
 // - use browser feature (localstroage, window, onclick, event...)
 'use client'
 
+export const dynamic = 'force-dynamic' // force next.js to render on every single request, no static optimization or cache 
+
 import { useState } from 'react';
 import { Product } from '../product-data';
 import Link from 'next/link';
