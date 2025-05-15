@@ -1,5 +1,5 @@
 import { NextRequest } from "next/server";
-import { products } from "@/app/product-data";
+import { connectToDb } from "../../db";
 
 type Params = {
   id : string;
@@ -7,7 +7,10 @@ type Params = {
 
 export async function GET(request : NextRequest, {params} : {params : Params}){
   const productId = params.id
-  const product =  products.find(p => p.id === productId)
+
+  // connect to mongo db
+  const {db} = await connectToDb()
+  const product = await db.collection('products').findOne({id: productId})
 
   if (!product){
     return new Response('Product not found!',  {

@@ -6,15 +6,13 @@ import { MongoClient,Db, ServerApiVersion } from 'mongodb';
 let cachedClient: MongoClient | null = null
 let cachedDb : Db | null = null
 
-export async function connectTODb(){
+export async function connectToDb(){
   if (cachedClient && cachedDb){
     return {client: cachedClient, db: cachedDb}
   }
 
 // username and password
 const uri = `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@cluster0.iqkocd4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
-console.log('-------------')
-console.log('url:', uri)
 
 const client = new MongoClient(uri, {
   serverApi: {

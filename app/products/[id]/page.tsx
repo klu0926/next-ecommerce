@@ -1,8 +1,11 @@
 import NotFoundPage from "@/app/not-found"
-import { products } from "@/app/product-data"
 
-export default function ProductDetail({params} : {params : {id: string}}){
-  const product = products.find(p => p.id === params.id)
+export default async function ProductDetail({params} : {params : {id: string}}){
+
+  const response = await fetch(`${process.env.PUBLIC_API_URL}/api/products/${params.id}`)
+  // Handle 404 later 
+
+  const product  = await response.json()
 
   if (!product){
     return <NotFoundPage></NotFoundPage>
