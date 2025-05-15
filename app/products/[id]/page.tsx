@@ -2,7 +2,7 @@ import NotFoundPage from "@/app/not-found"
 
 export default async function ProductDetail({params} : {params : {id: string}}){
 
-  const response = await fetch(`${process.env.PUBLIC_API_URL}/api/products/${params.id}`)
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products/${params.id}`)
   // Handle 404 later 
 
   const product  = await response.json()

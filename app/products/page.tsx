@@ -6,10 +6,10 @@ import ProductList from "../ProductList";
 export default async function ProductPage(){
 
   // fetch from my own backend
-  const response = await fetch(`${process.env.PUBLIC_API_URL}/api/products`, {cache: 'no-cache'})
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`, {cache: 'no-cache'})
   const products = await response.json()
 
-  const response2 = await fetch(`${process.env.PUBLIC_API_URL}/api/users/1/cart`, {cache: 'no-cache'}) // no cache to force it always return current data
+  const response2 = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/users/1/cart`, {cache: 'no-cache'}) // no cache to force it always return current data
   const cartProducts = await response2.json()
 
   return (
