@@ -2,7 +2,7 @@
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 ## Vercel Site
-[https://nextjs-ecommerce-seven.vercel.app](https://nextjs-ecommerce-seven.vercel.app)
+[https://nextjs-ecommerce-seven.vercel.app/products](https://nextjs-ecommerce-seven.vercel.app/products)
 
 ## Getting Started
 
@@ -20,7 +20,7 @@ bun dev
 
 ## DEMO
 
-Open [https://nextjs-ecommerce-seven.vercel.app](https://nextjs-ecommerce-seven.vercel.app) with your browser to see the result.
+Open [https://nextjs-ecommerce-seven.vercel.app/products](https://nextjs-ecommerce-seven.vercel.app/products) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
